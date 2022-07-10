@@ -1,11 +1,23 @@
 import './App.css';
-import { BrouserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/navigation/Navbar.jsx';
+import Inicio from './components/pages/Inicio.jsx';
+import Pokemon from './components/pages/Pokemon.jsx';
+import Items from './components/pages/Items.jsx';
+
 
 function App () {
 
   return (
     <div className="App">
-      <h1>PokeFans</h1>
+      <Router>
+        <Navbar/>
+        <Routes>
+          <Route path='/' element = {<Inicio/>} exact/>
+          <Route path='/Pokemon' element = {<Pokemon/>}/>
+          <Route path='/items' element = {<Items/>}/>
+        </Routes>
+      </Router>
     </div>
   );
 }
