@@ -1,9 +1,11 @@
 import React from 'react'
+import Carousel from '../carousel/Carousel.jsx'
 
 const inicio = () => {
   return (
     <div>
-      <h1>Inicio</h1>
+      <Carousel />
+      <h1>Carousel</h1>
     </div>
   )
 }

@@ -8,7 +8,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg bg-light"> {/*ver como manejar el dark*/}
         <div className="container-fluid">
           <Link to="/">
-          <img src={pokemonLogo} width="70" alt="pokemon-logo" />
+          <img src={pokemonLogo} width="90" alt="pokemon-logo" />
           </Link>
           {/* <Link className="navbar-brand" to="/">
             
