@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/Inicio.css"
 import Carousel from "../carousel/Carousel.jsx";
+import Footer from "../footer/Footer";
 
 const inicio = () => {
   return (
@@ -29,18 +30,19 @@ const inicio = () => {
         </figure>
 
         <h2 className="bg-dark text-white mb-5 text-center">
-          Primer opening de la serie de Pokemon
+          Primer opening de la serie de Pokémon 
         </h2>
-        <div class="iframe-container">
+        <div className="iframe-container">
         <iframe
           src="https://www.youtube.com/embed/Rsv2VkoIpk0?start=6"
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
         ></iframe> 
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };
