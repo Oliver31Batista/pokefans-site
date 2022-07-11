@@ -10,7 +10,7 @@ import pokimg5 from '../imgs/pokimg5.jpg';
 
 const Carousel = () => {
   return (
-    <div>
+    <div className="container">
         <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
   <div className="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
