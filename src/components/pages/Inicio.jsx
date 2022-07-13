@@ -7,6 +7,9 @@ const inicio = () => {
   return (
     <div>
       <Carousel />
+      <h1 className="bg-dark text-white mb-5 text-center">
+      Pokémon 
+        </h1>
       <div className="container mb-5 ">
         <figure>
           <blockquote className="blockquote">

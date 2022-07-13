@@ -24,6 +24,9 @@ function Footer() {
                   <li className='font-weight-bold mb-2'>Pokemon</li>
                   <li className='text-center'>En este sitio web podras encontrar informaciones sobre tus pokemones favoritos</li>
                 </ul>
+                <div className="container">
+                  <p className='text-center mb-0 mt-2'>© 2022 Oliver Batista. All rights reserved.</p>
+                </div>
             </nav>
         </div>
     </footer>

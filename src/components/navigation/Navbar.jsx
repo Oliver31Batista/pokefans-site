@@ -5,7 +5,7 @@ import pokemonLogo from "../imgs/pokemonLogo.png"
 const Navbar = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-light"> {/*ver como manejar el dark*/}
+      <nav className="navbar-dark bg-dark navbar navbar-expand-lg "> {/*ver como manejar el dark*/}
         <div className="container-fluid">
           <Link to="/">
           <img src={pokemonLogo} width="90" alt="pokemon-logo" />
