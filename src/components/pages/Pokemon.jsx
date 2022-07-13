@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from 'react'
 
-import axios from 'axios';
+import Axios from 'axios';
 
 const Pokemon = () => {
 
-  const [pokemonName, setPokemonName] = useState('');
+  const [pokemonName, setPokemonName] = useState("");
   const [pokemonChosen, setPokemonChosen] = useState(false);
   const [pokemon, setPokemon] = useState(
     {
       name: "", 
       species: "", 
       img: "", 
-      hp: "",
-      attack: "",
-      type: "",
+      // hp: "",
+      // attack: "",
+      // type: "",
     }
   );
 
@@ -22,14 +22,15 @@ const Pokemon = () => {
   // }, [])
 
   const obtenerDatos = () => {
-    axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemon}`).then((respuesta) => {
+    Axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`).then((respuesta) => {
       setPokemon({
         name: pokemonName, 
         species: respuesta.data.species.name, 
         img: respuesta.data.sprites.front_default, 
-        hp: respuesta.data.stats[0].base_stat,
-        attack: respuesta.stats[1].base_stat,
-        type: respuesta.data.types[0].type.name, })
+        // hp: respuesta.data.stats[0].base_stat,
+        // attack: respuesta.stats[1].base_stat,
+        // type: respuesta.data.types[0].type.name,
+       })
     });
     setPokemonChosen(true);
   }
@@ -48,7 +49,7 @@ const Pokemon = () => {
           </ul>
         } */}
         <div className="pokemon">
-          {!pokemonChosen ? (<h1>busca un pokemon</h1>) : (<h1>{pokemonName}</h1>)}
+          {!pokemonChosen ? (<h1>busca un pokemon</h1>) : (<h1>{pokemon.name}<img src={pokemon.img} alt={pokemon.name}/></h1>)}
         </div>
     </div>
   )
