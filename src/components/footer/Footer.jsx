@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import pokemonLogo from '../imgs/pokemonLogo.png'
+// import pokemonLogo from '../imgs/pokemonLogo.png'
 
 function Footer() {
   return (
@@ -9,7 +9,7 @@ function Footer() {
         <div className="container">
             <nav className='row'>
                 <Link to='/' className='col-12 col-md-3 d-flex align-items-center justify-content-center'>
-                    <img src={pokemonLogo} className='mx-2' alt="Logo Pokemon" width='300' height='100' />
+                    {/* <img src={pokemonLogo} className='mx-2' alt="Logo Pokemon" width='300' height='100' /> */}
                 </Link>
                 <ul className='col-12 col-md-3 list-unstyled'>
                   <li className='font-weight-bold mb-2'>Pokemon</li>

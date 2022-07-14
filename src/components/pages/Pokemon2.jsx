@@ -2,7 +2,7 @@ import React from 'react';
 import { getPokemons, getPokemonData, searchPokemons } from '../../api';
 import '../../App.css'
 // import Modals from './components/Modals';
-import Navbar from '../Navbar.jsx'
+import Navbar from '../NavbarPokedex.jsx'
 import Pokemon from '../PokemonCard.jsx'
 import ResultsPokedex from '../ResultsPokedex.jsx'
 import Searchbar from '../Searchbar'

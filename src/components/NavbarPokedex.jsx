@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import pokemonLogo from './imgs/pokemonLogo.png'
-import './css/Navbar.css'
+import './css/NavbarPokedex.css'
 import FavoriteContext from "../context/favoritesContext"
 
 
@@ -10,7 +10,7 @@ const Navbar =  () => {
     console.log(favoritePokemons);
 
     return (
-        <nav>
+        <div className="nav">
             <div />
             <div>
                 <img 
@@ -19,7 +19,7 @@ const Navbar =  () => {
                     className="navbar-logo" />
             </div>
             <div>&#10084;&#65039; {favoritePokemons.length}</div>
-        </nav>
+        </div>
     );
 };
 
