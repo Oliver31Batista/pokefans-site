@@ -1,8 +1,8 @@
 import React, { useContext, useState } from "react";
-import FavoriteContext from "../context/favoritesContext"
-import "./css/Pokemon.css"
-import expandArrows from "./imgs/expandArrows.svg"
-import { useModal } from "./hooks/useModal"
+import FavoriteContext from "../../context/favoritesContext"
+import "../css/Pokemon.css"
+import expandArrows from "../imgs/expandArrows.svg"
+import { useModal } from "../hooks/useModal"
 import Modal from "./Modal"
 import ModalPokemonCard from "./ModalPokemonCard";
 

@@ -1,7 +1,7 @@
 import React from "react";
-import './css/ResultsPoxedex.css'
-import Pagination from "./Pagination";
-import Pokemon from "./PokemonCard";
+import '../css/ResultsPoxedex.css'
+import Pagination from "../pokedex_pages/Pagination";
+import Pokemon from "../pokedex_pages/PokemonCard";
 
 const ResultsPokedex = ({ pokemons, page, setPage, total, loading }) => {
 

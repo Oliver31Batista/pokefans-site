@@ -1,7 +1,7 @@
 import React from "react";
-import "./css/Searchbar.css"
+import "../css/Searchbar.css"
 import { useState } from "react";
-import { searchPokemons } from "../api";
+import { searchPokemons } from "../../api";
 import { FcSearch } from "react-icons/fc"
 
 

@@ -1,4 +1,4 @@
-import "./css/Modal.css"
+import "../css/Modal.css"
 import {GrClose} from "react-icons/gr"
 
 const Modal = ({children, isOpen, closeModal}) => {

@@ -2,10 +2,10 @@ import React from 'react';
 import { getPokemons, getPokemonData, searchPokemons } from '../../api';
 import '../../App.css'
 // import Modals from './components/Modals';
-import Navbar from '../NavbarPokedex.jsx'
-import Pokemon from '../PokemonCard.jsx'
-import ResultsPokedex from '../ResultsPokedex.jsx'
-import Searchbar from '../Searchbar'
+import Navbar from '../pokedex_pages/NavbarPokedex.jsx'
+import Pokemon from '../pokedex_pages/PokemonCard.jsx'
+import ResultsPokedex from '../pokedex_pages/ResultsPokedex.jsx'
+import Searchbar from '../pokedex_pages/Searchbar'
 import { FavoriteProvider } from '../../context/favoritesContext'
 
 const localStorageKey = "favorite_pokemon";

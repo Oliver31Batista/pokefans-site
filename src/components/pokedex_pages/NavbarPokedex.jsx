@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import pokemonLogo from './imgs/pokemonLogo.png'
-import './css/NavbarPokedex.css'
-import FavoriteContext from "../context/favoritesContext"
+import pokemonLogo from '../imgs/pokemonLogo.png'
+import '../css/NavbarPokedex.css'
+import FavoriteContext from "../../context/favoritesContext"
 
 
 const Navbar =  () => {

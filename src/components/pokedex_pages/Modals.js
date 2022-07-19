@@ -1,6 +1,6 @@
 import React from 'react';
 import { useModal } from './hooks/useModal'
-import Modal from './Modal'
+import Modal from './Modal.jsx'
 
 const Modals = () => {
   const [isOpenModal1, openModal1, closeModal1] = useModal(false);
