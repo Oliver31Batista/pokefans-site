@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import pokemonLogo1 from "../imgs/pokemonLogo.png"
+
 
 const Navbar = () => {
   return (
     <div>
-      <nav className="navbar-dark bg-dark navbar navbar-expand-lg"> {/*ver como manejar el dark*/}
+      {/* <nav className="navbar-dark bg-dark navbar navbar-expand-lg"> 
         <div className="container-fluid">
           <Link to="/">
-          {/* <img src={pokemonLogo1} width="90" alt="pokemon-logo" /> */}
+
           </Link>
           <button
             className="navbar-toggler"
@@ -47,7 +47,7 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-      </nav>
+      </nav> */}
     </div>
   );
 };
