@@ -1,4 +1,4 @@
-.searchbar-container {
+ .searchbar-container {
     display: flex;
     margin: 0px auto;
     padding: 0 20px;
@@ -94,7 +94,7 @@ form:valid .fa{
 }
 
 
-a {
+.searchbar-container a {
   display: none;
   position: absolute;
   top: 50px;
@@ -109,4 +109,4 @@ a {
 
 form:valid a {
   display: block;
-}
+} 
