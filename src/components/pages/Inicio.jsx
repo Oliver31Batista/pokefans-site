@@ -6,7 +6,7 @@ import Footer from "../footer/Footer";
 const inicio = () => {
   return (
     <div>
-      <Carousel />
+      {/* <Carousel />
       <h1 className="bg-dark text-white mb-5 text-center">
       Pokémon 
         </h1>
@@ -45,7 +45,7 @@ const inicio = () => {
         ></iframe> 
         </div>
       </div>
-      <Footer/>
+      <Footer/> */}
     </div>
   );
 };
