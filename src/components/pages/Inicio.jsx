@@ -16,7 +16,7 @@ const inicio = () => {
 
   return (
     <div className="container">
-      <Slider imagenes={mockImagenes}/>
+      {/* <Slider imagenes={mockImagenes}/> */}
     </div>
       /* <Carousel />
       <h1 className="bg-dark text-white mb-5 text-center">
