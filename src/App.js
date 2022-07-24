@@ -5,6 +5,7 @@ import Inicio from './components/pages/Inicio.jsx';
 import Pokemon2 from './components/pages/Pokemon2.jsx';
 import Items from './components/pages/Items.jsx';
 import Galeria from './components/pages/Galeria';
+import Footer from './components/footer/Footer';
 
 function App () {
 
@@ -18,6 +19,7 @@ function App () {
           <Route path='/items' element = {<Items/>}/>
           <Route path='/Galeria' element = {<Galeria/>}/>
         </Routes>
+        <Footer/>
       </Router>
     </div>
   );
