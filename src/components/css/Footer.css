@@ -55,10 +55,6 @@ ul{
 	width: 50px;
 }
 
-.footer-col ul li:not(:last-child){
-	margin-bottom: 10px;
-}
-
 .footer-col ul li a{
 	font-size: 16px;
 	text-transform: capitalize;
@@ -75,22 +71,12 @@ ul{
 	padding-left: 8px;
 }
 
-.footer-col .social-links a{
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(255,255,255,0.2);
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
+.social-links{
+	display: flex;
+	flex-flow: wrap row;
+	margin:0 50px 10px 0;
 	color: #ffffff;
 	transition: all 0.5s ease;
-}
-
-.footer-col .social-links a:hover{
-	color: #24262b;
-	background-color: #ffffff;
 }
 
 

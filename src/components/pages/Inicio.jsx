@@ -1,10 +1,10 @@
 import React from "react";
 import "../css/Inicio.css"
-import Footer from "../footer/Footer";
-import Slider from "../slider/Slider";
 import pokimg1 from "../imgs/pokimg1.webp"
 import pokimg2 from "../imgs/pokimg2.jpg"
 import pokimg3 from "../imgs/pokimg3.jpg"
+import backgroundImg1 from "../imgs/backgroundImg1.svg"
+import backgroundImg2 from "../imgs/backgroundImg2.svg"
 
 const inicio = () => {
 
@@ -14,19 +14,30 @@ const inicio = () => {
     pokimg3
   ]
 
+  const containerStyle1 = {
+    backgroundImage:
+      `url(${backgroundImg1})`,
+    width: "100%",
+    height: "100vh",
+  };
+
+  const containerStyle2 = {
+    backgroundImage:
+      `url(${backgroundImg2})`,
+    width: "100%",
+    height: "100vh",
+  };
+
   return (
-    <div className="container">
+    <>
+    <div className="grid-block" style={containerStyle1}>
       {/* <Slider imagenes={mockImagenes}/> */}
-    </div>
-      /* <Carousel />
-      <h1 className="bg-dark text-white mb-5 text-center">
-      Pokémon 
-        </h1>
-      <div className="container mb-5 ">
-        <figure>
-          <blockquote className="blockquote">
-            <p className="text-center mt-5">
-              Los Pokémon son una clase de criaturas inspiradas en animales
+      <div className="titleFirstPage">
+        <h1>¿Qué son los <b>Pokémones</b>?</h1>
+      </div>
+      <div className="paragraph">
+        <p>
+        Los Pokémon son una clase de criaturas inspiradas en animales
               reales, insectos, objetos, plantas o criaturas mitológicas con un
               sistema de evolución lamarckiano. Los jugadores toman el papel
               Entrenadores Pokémon y tienen tres objetivos generales: completar
@@ -39,25 +50,29 @@ const inicio = () => {
               todas las versiones de la franquicia Pokémon, incluidos los
               videojuegos, las series de anime y manga, y el juego de cartas
               coleccionables Pokémon.
-            </p>
-          </blockquote>
-          <figcaption className="blockquote-footer">WIKIPEDIA</figcaption>
-        </figure>
-
-        <h2 className="bg-dark text-white mb-5 text-center">
-          Primer opening de la serie de Pokémon 
-        </h2>
-        <div className="iframe-container">
-        <iframe
-          src="https://www.youtube.com/embed/Rsv2VkoIpk0?start=6"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe> 
-        </div>
+        </p>
       </div>
-      <Footer/> */
+    </div>
+    <div  style={containerStyle2}>
+        {/* <Slider imagenes={mockImagenes}/> */}
+      <div className="titleFirtsPage"></div>
+      </div>
+    </>
+
+     
+      
+           
+        // <div className="iframe-container">
+        // <iframe
+        //   src="https://www.youtube.com/embed/Rsv2VkoIpk0?start=6"
+        //   title="YouTube video player"
+        //   frameBorder="0"
+        //   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        //   allowFullScreen
+        // ></iframe> 
+        // </div>
+
+
 
   );
 };
