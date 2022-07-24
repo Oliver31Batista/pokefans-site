@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import ResponsiveAppBar from './components/navigation/Navbar1.jsx';
+import Navbar from './components/navigation/Navbar1.jsx';
 import Inicio from './components/pages/Inicio.jsx';
 import Pokemon2 from './components/pages/Pokemon2.jsx';
 import Items from './components/pages/Items.jsx';
@@ -11,7 +11,7 @@ function App () {
   return (
     <div className="App">
       <Router>
-        <ResponsiveAppBar/>
+        <Navbar/>
         <Routes>
           <Route path='/' element = {<Inicio/>} exact/>
           <Route path='/Pokemon2' element = {<Pokemon2/>}/>

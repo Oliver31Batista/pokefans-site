@@ -1,12 +1,24 @@
 import React from "react";
 import "../css/Inicio.css"
-import Carousel from "../carousel/Carousel.jsx";
 import Footer from "../footer/Footer";
+import Slider from "../slider/Slider";
+import pokimg1 from "../imgs/pokimg1.webp"
+import pokimg2 from "../imgs/pokimg2.jpg"
+import pokimg3 from "../imgs/pokimg3.jpg"
 
 const inicio = () => {
+
+  const mockImagenes = [
+    pokimg1,
+    pokimg2,
+    pokimg3
+  ]
+
   return (
-    <div>
-      {/* <Carousel />
+    <div className="container">
+      <Slider imagenes={mockImagenes}/>
+    </div>
+      /* <Carousel />
       <h1 className="bg-dark text-white mb-5 text-center">
       Pokémon 
         </h1>
@@ -45,8 +57,8 @@ const inicio = () => {
         ></iframe> 
         </div>
       </div>
-      <Footer/> */}
-    </div>
+      <Footer/> */
+
   );
 };
 
